@@ -239,7 +239,6 @@
     height: 100vh;
  }
  .users .all{
-    margin: 10px;
     width: 100%;
     background-color: var(--lightbghover);
     
@@ -287,7 +286,6 @@
  .users .userslist a{
     text-decoration: none;
     position: relative;
-    border-bottom: 1px solid rgb(165, 163, 163);
  }
  .users .userslist a .indicator.online{
     position: absolute;
@@ -314,18 +312,14 @@
     gap: 10px;
     padding: 0 10px 10px 10px;
  }
- .users .userslist .user span{
-    font-weight: 500;
- }
+ 
  .users .userslist .user a{
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
     color: black;
  }
-.user p{
-   font-size: 13px;
- }
+
 
  @media (max-width:600px) {
    .chatarea .chathead img{

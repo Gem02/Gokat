@@ -50,7 +50,7 @@ if ($users->rowCount() == 0) {
         $output .='<a href="chatarea.php?user='.$row['id'].'" class="user">
                         <div><img src="'. $row['image'].'" alt=""></div>
                         <div >
-                            <p>'. $row['firstname']. " " . $row['lastname'] .'</p>
+                            <p class="">'. $row['firstname']. " " . $row['lastname'] .'</p>
                             <span>'. $you . $message .'</span>
                         </div>
                         '. $statuscheck .'

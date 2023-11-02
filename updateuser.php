@@ -88,7 +88,7 @@ if(!isset($user_id)) {
 
 <body>
     <?php include "require/header.php"; ?>
-        <div class="registerationhead">
+        <div class="categorieshead">
             <h5>UPDATE DATA</h5>
         </div>
         <section class="registerpage update">

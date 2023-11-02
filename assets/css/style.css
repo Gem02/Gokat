@@ -58,6 +58,7 @@
     --light-color:#181717;
     --light-bg:#333;
     --black:#fff;
+    --lightbghover:rgb(43, 42, 42);
     --white:#222;
     --lightbg:#161616;
     --border:.1rem solid rgba(255,255,255,.2);
@@ -227,6 +228,7 @@
 .newheader nav .profile h5{
    font-size: 13px;
    font-weight: 700;
+   color: var(--black);
 }
 .newheader nav .profile{
    position: absolute;
@@ -435,6 +437,7 @@ main .right::-webkit-scrollbar{
  main .right .first_warpper .page_img{
     display: flex;
     align-items: center;
+    color: var(--black);
  }
  
  main .right .first_warpper .page_img img{
@@ -822,6 +825,9 @@ hr{
 .centered .feedpost .commentsection .commenterinfo .maincommenttext p{
    font-size: 14px;
    color: var(--textgray);
+}
+.centered .feedpost .commentsection .commenterinfo .maincommenttext h3{
+   color: var(--black);
 }
 .centered .feedpost .commentsection .commenterinfo .comments_options span,
 .centered .feedpost .commentsection .commenterinfo .comments_options a{
@@ -1506,25 +1512,30 @@ width: 100%;
 .registerpage .form{
    padding: 2rem 1rem;
    border-radius: 0;
-   background: rgb(241, 242, 243);
+   background-color: var(--lightbg);
    width: 95%;
    max-width: 40rem;
    font-size: .7rem;
-   margin-bottom: 5rem;
+   margin: 2rem 0;
 }
 .registerpage .form input{
    width: 100%;
+   margin-top: 10px;
    padding: 12px;
    font-size: 13px;
-   color: rgb(117, 117, 117);
-   border: solid 1px rgb(214, 211, 211);
+   color: var(--textgray);
+   background-color: var(--lightbghover);
+   
 }
 .registerpage .form .eachinput textarea{
    font-size: 13px;
-   color: rgb(117, 117, 117);
+   color: var(--textgray);
 }
 .registerpage .form .reginfo{
    margin-bottom: 40px;
+}
+.registerpage .form .reginfo h5{
+   color: var(--black);
 }
 .registerpage .form .reginfo .text-danger{
    font-size: 14px;
@@ -1535,6 +1546,7 @@ width: 100%;
 }
 .registerpage .form .eachinput label{
    font-weight: 600;
+   font-size: 13px;
    color: rgb(255, 115, 0);
 }
 .registerpage .reginfo.acceptterms{
@@ -2465,47 +2477,7 @@ width: 100%;
  .submit_comment:hover{
     background: var(--orange);
  }
- 
- .commentarea .commenterinfo{
-    display: flex;
-    font-size: 1.5rem;
-    color: var(--light-color);
- }
- .commentarea .fullcommenterprofilepic{
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-    object-fit: cover;
- }
- .commentarea .maincommenttext{
-    margin-left: 1rem;
-    background: var(--light-bg);
-    padding: .5rem;
-    border-radius: .5rem;
- }
- .commentarea .maincommenttext p{
-    font-size: 1.7rem;
-    color: var(--light-color);
- }
- .commentarea .maincommenttext h3{
-    color: var(--black);
-    font-size: 1.5rem;
- }
- .commentarea .comments_option{
-    margin: .5rem 0 0 1rem;
-    display: flex;
-    gap: 1rem;
-    color: var(--light-color);
- }
- .commentarea .comments_option .deleteReply{
-    color: rgb(243, 86, 86);
- }
- .commentarea .comments_option .editReply{
-    color: rgb(86, 180, 243);
- }
- .commentarea .comments_option .reportReplyID{
-    color: rgb(243, 162, 86);
- }
+
  .chatnowbtn{
     padding: 5px;
     background: #4ea163;
@@ -2927,8 +2899,16 @@ width: 100%;
 
 
 
+.users .userslist .user p{
+   font-size: 13px;
+   color: var(--black);
+ }
+ .users .userslist .user span{
+   font-size: 13px;
+   color: var(--textgray);
+   font-weight: 550;
 
-
+}
 
  @media (max-width:1200px){
  

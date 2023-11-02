@@ -43,9 +43,6 @@ if(!isset($userId)) {
                 <div class="page">
 
                     <h2>INFORMATION</h2>
-                    <div class="menu">
-                        <i class="fas fa-ellipsis-v"></i>
-                    </div>
 
                 </div>
 

@@ -177,7 +177,7 @@
     
                                         <div class="directorysection">
                                             <a href="./chat/mainchatarea.php?user_id='.$post_info["poster_id"].'" class="chatnowbtn">Chat Now</a>
-                                            <a href="requestpage.php?user='.$post_info["poster_id"].'" class="requestnowbtn">Request Similar work</a>
+                                            <a href="requestpage.php?user='.$post_info["poster_id"].'" class="requestnowbtn work">Request Similar work</a>
                                         </div>
                                     </div>
             
