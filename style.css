@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --lightbg:#efefef;
+    --lightbghover:#d6d6d6;
+    --mainblue:rgb(255, 102, 0);
+}
+.chatarea{
+    width: 100%;
+    max-width: 700px;
+    margin: 10px;
+    position: relative;
+    margin: 0 auto;
+}
+.chatarea .chathead{
+    background-color: var(--mainblue);
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 10px;
+    gap: 1rem;
+    align-items: center;
+}
+.chatarea .chathead .namez{
+   color: white;
+   font-size: 13px;
+}
+.chatarea .chathead .options .btn{
+   padding: 5px 15px;
+   font-weight: 700;
+   margin-left: 20px;
+   display: none;
+   font-size: 12px;
+   border: 1px solid white;
+   cursor: pointer;
+   
+}
+.chatarea .chathead .options .morebtn{
+   display: none;
+   flex-direction: column;
+   position: absolute;
+   z-index: 1000;
+   width: 200px;
+   right: 0;
+   top: 70px;
+   height: fit-content;
+   background-color: red;
+}
+.chatarea .chathead .options .morebtn a{
+   border: none;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   padding: 15px;
+   margin-left: 0;
+   text-align: left;
+}
+.chatarea .chathead .options .morebtn a:hover{
+   background-color: rgb(182, 7, 7);
+}
+.chatarea .chathead .options .morebtn.active{
+   display: flex;
+}
+.chatarea .chathead .options a{
+   padding: 5px 15px;
+   border: 1px solid white;
+   margin-left: 20px;
+   text-decoration: none;
+   font-size: 13px;
+   font-weight: 600;
+   color: white;
+}
+.chatarea .chathead ul{
+    display: flex;
+}
+.chatarea .chathead ul li{
+    list-style: none;
+    margin-left: 15px;
+    color: white;
+    font-size: 15px;
+}
+.chatarea .chathead img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 3px 10px;
+}
+.chatenviroment{
+    position: relative;
+    height: 500px;
+    overflow-y: auto;
+    padding: 10px 30px 20px 30px;
+    background: var(--lightbg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chatarea .messageform{
+    background-color: var(--lightbg);
+}
+.chatarea .messageform .messageinput{
+    width: 100%;
+    margin: 10px;
+    background: var(--lightbghover);
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+}
+.chatarea .messageform button{
+    font-size: 13px;
+    font-weight: 600;
+    background-color: rgba(50, 50, 54, 0.479);
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-right: 10px;
+    
+}
+.chatarea .messageform button.active{
+    background-color: rgb(50, 50, 54);
+}
+.chatarea .messageform .formflex{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.registerenv{
+    display: flex;
+    justify-content: center;
+}
+ .registerpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 3rem 15px 0px 15px;
+ }
+ .loginfrmreg{
+    margin-top: 8px;
+ }
+ .loginfrmreg a{
+    font-size: 13px;
+    color: rgb(240, 68, 0);
+    text-decoration: none;
+ 
+ }
+ .registerpage .form{
+    padding: 2rem 1rem;
+    border-radius: 0;
+    background: rgb(241, 242, 243);
+    width: 95%;
+    max-width: 60rem;
+    font-size: 13px;
+    margin-bottom: 20px;
+ }
+ .registerpage .form input{
+    width: 100%;
+    padding: 12px;
+    font-size: 13px;
+    color: rgb(117, 117, 117);
+    border: solid 1px rgb(214, 211, 211);
+ }
+ .registerpage .form .reginfo{
+    margin-bottom: 10px;
+ }
+ .registerpage .form .reginfo .text-danger{
+    font-size: 11px;
+    border: 1px solid red;
+ }
+ .registerpage .form .eachinput{
+    margin-bottom: 25px;
+ }
+ .registerpage .form .eachinput label{
+    font-weight: 600;
+    color: rgb(255, 115, 0);
+ }
+ .registerpage .form .form-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+ }
+ .registerpage .form .form-area button{
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+    background-color: #2d92cc;
+    border: none;
+ }
+ .registerpage .form .form-area button:hover{
+    background-color: #4b7afc;
+ }
+ .registerpage .form .reginfo h5{
+    font-size: 15px;
+    margin-bottom: 2rem;
+    font-weight: 700;
+ }
+
+
+
+
+
+
+
+
+
+ .users{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    background-color: rgb(241, 242, 243);
+    height: 100vh;
+ }
+ .users .all{
+    margin: 10px;
+    width: 100%;
+    background-color: var(--lightbghover);
+    
+ }
+ .users .all .me{
+    background-color: white;
+    padding: 10px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+ }
+ .users .all .me img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+ .users .all .me p{
+    font-weight: 300;
+    font-size: 18px;
+ }
+ .users .all .me .logout a{
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(240, 72, 72);
+ }
+ .users .head p{
+    background-color: var(--mainblue);
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+ }
+ .users .userslist img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+ }
+ .users .userslist a{
+    text-decoration: none;
+    position: relative;
+    border-bottom: 1px solid rgb(165, 163, 163);
+ }
+ .users .userslist a .indicator.online{
+    position: absolute;
+    right: 10px;
+    color: rgb(4, 172, 4);
+ }
+ .users .userslist a .indicator.offline{
+    position: absolute;
+    right: 10px;
+    color: rgb(81, 82, 81);
+ }
+ .users .userslist a p{
+    font-weight: 700;
+    color: black;
+ }
+ .users .userslist a span{
+    font-weight: 300;
+    font-size: 13px;
+    color: rgb(92, 90, 90);
+ }
+ .users .userslist .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px 10px 10px;
+ }
+ .users .userslist .user span{
+    font-weight: 500;
+ }
+ .users .userslist .user a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+ }
+.user p{
+   font-size: 13px;
+ }
+
+ @media (max-width:600px) {
+   .chatarea .chathead img{
+      width: 40px;
+      height: 40px;
+   }
+   .chatarea .chathead{
+      justify-content: space-between;
+   }
+   .chatarea .chathead .options .btn{
+      margin-left: 0;
+   }
+   .chatarea .chathead .options .moretmpt{
+      display: none;
+   }
+   .chatarea .chathead .options .btn{
+      display: block;
+   }
+ }
